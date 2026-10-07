@@ -55,12 +55,12 @@ void Scene::render()  {
         
 
 
-        // update models 
         glfwSwapBuffers(m_window->getWindow());
         glfwPollEvents();
 
+        //Update models
         //model1->updateModel(0.7f);
-        //model2->updateModel(0.7f);
+        model2->updateModel(0.7f);
         //model3->updateModel(0.7f);  
     }
 

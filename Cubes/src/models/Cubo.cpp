@@ -98,9 +98,9 @@ void Cubo::updateModel(float deltaTime ){
     {
         m_angulo += deltaTime *1.0;
         m_model_mat = glm::mat4(1.0f);
-        //m_model_mat = glm::translate(m_model_mat,glm::vec3(2.0f,0.0f,2.0f));
-        m_model_mat= glm::rotate(m_model_mat,glm::radians(m_angulo),glm::vec3(0.0f,1.0f,0.0f));
         m_model_mat = glm::translate(m_model_mat,glm::vec3(2.0f,0.0f,2.0f));
+        m_model_mat= glm::rotate(m_model_mat,glm::radians(m_angulo),glm::vec3(0.0f,1.0f,0.0f));
+        //m_model_mat = glm::translate(m_model_mat,glm::vec3(2.0f,0.0f,2.0f));
     } else if (m_option == 2)
     {
         //vel += deltaTime * 0.02;
